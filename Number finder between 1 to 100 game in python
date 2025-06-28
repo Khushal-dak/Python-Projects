@@ -1,0 +1,15 @@
+# ==================random number generator game ========================
+num=randint(1,100)
+for i in range(1,11):
+    user=int (input(f"Enter {i} number : "))
+    if(num==user):
+        print(f"You win the game in {i} times")
+        exit()
+    elif(user<num):
+        print("Please enter the large number")
+    elif(user>num):
+        print("Please enter the lower number")
+    else:
+        print("Wrong entry")
+    print(f"{i} chances completed {10-i} are remainings")
+print(f"Game is over!!! \nComputer number = {num}")
